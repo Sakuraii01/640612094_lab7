@@ -16,12 +16,10 @@ int adiff(int a,int b){
       while(-360 > b){
           b+=360;
       }
+
   int c;
-  if(a==360 && b == 0){
-    c=0;
-  }else if(b==360 && a == 0){
-    c=0;
-  }else if(a>b){
+  
+  if(a>b){
     c=a-b;
   }else{
     c=b-a;
